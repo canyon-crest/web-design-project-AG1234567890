@@ -199,3 +199,27 @@ hr {
     text-align: center;
   }
 }
+
+.section-title {
+  color: #00b3ff;
+  text-shadow: 0 0 10px rgba(0, 179, 255, 0.5);
+  margin-bottom: 10px;
+}
+
+/* 2️⃣ Paragraph style */
+.intro-text {
+  line-height: 2em;
+  color: #dcdcdc;
+  margin-bottom: 20px;
+}
+
+/* 3️⃣ Image style */
+.profile-image {
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 179, 255, 0.4);
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+.profile-image:hover {
+  transform: scale(1.05);
+}
