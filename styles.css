@@ -1,1 +1,15 @@
+body {
+    font-family: Calibri, sans-serif;
+    margin: 20px;
+    background-color: #f8ffe0;
+    color: #000;
+}
+p {
+    line-height: 2em;
+}
 
+img {
+    width: 300px;
+ 
+  
+}
