@@ -7,8 +7,21 @@ body {
   line-height: 1.8;
   padding: 0 20px;
   transition: background-color 0.3s ease, color 0.3s ease;
+
+
+
 }
 
+body {
+  background: linear-gradient(-45deg, #0f0f0f, #1a1a1a, #001a33, #0b0b0b);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 
 h1 {
@@ -18,6 +31,17 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
   text-shadow: 0 0 20px rgba(0, 179, 255, 0.4);
+}
+
+h1 {
+  background: linear-gradient(90deg, #00b3ff, #ff00d4);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 30s linear infinite;
+}
+@keyframes shine {
+  from { background-position: -200px; }
+  to { background-position: 200px; }
 }
 
 
@@ -35,6 +59,10 @@ h2 {
   font-weight: normal;
   margin-bottom: 2em;
   text-shadow: 0 0 10px rgb(255, 74, 74);
+}
+h2 {
+  color: #00b3ff;
+  text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff;
 }
 
 h2:hover {
@@ -238,96 +266,6 @@ hr {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #ffffff;    
-    color: #000000       
-  }
-
-  h1, h2, h3 {
-    color: #003366;         
-    text-shadow: none;
-  }
-
-  a {
-    color: #0066cc;
-    border-bottom-color: rgba(0, 102, 204, 0.4);
-  }
-
-  a:hover {
-    color: #004c99;
-    border-bottom-color: #004c99;
-  }
-
-  a:visited {
-    color: #04396e;
-    border-bottom-color: rgba(0, 102, 204, 0.4);
-  }
-}
-@media (max-width: 600px) {
-  body {
-    margin: 10px;
-    padding: 10px;
-  }
-  img {
-    float: none;
-    display: block;
-    margin: 0 auto 20px;
-    width: 90%;
-  }
-  h1 {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 700px) {
-  body {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.3em;
-  }
-
-  h3 {
-    font-size: 1.2em;
-  }
-
-  img {
-    float: none;          
-    display: block;
-    margin: 0 auto 20px;  
-    width: 90%;           
-    border-radius: 10px;
-  }
-
-  p {
-    text-align: left;
-    margin-bottom: 1.5em;
-  }
-
-  a {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    margin: 10px;
-  }
-
-  img {
-    width: 100%;
-    float: none;
-  }
-}
 
 
 @media (max-width: 768px) {
@@ -358,3 +296,4 @@ hr {
     text-align: center;
   }
 }
+
